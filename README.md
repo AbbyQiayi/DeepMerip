@@ -27,7 +27,7 @@ To use DeepMerip, ensure you have the following dependencies installed:
 
 ## Usage
 
-### Data Preparation
+### Data Preparation - Training
 Before running DeepMerip, ensure that your data is preprocessed correctly. The tool expects input coverage data and binary peak calling results in `.npz` format. These files typically include the following arrays:
 - **IP_cov**: Immunoprecipitation coverage data.
 - **input_cov**: Input coverage data (control).
@@ -41,15 +41,14 @@ Once your data is prepared, you can run the deep learning model for denoising by
 ### Model Testing
 You can evaluate the performance of the denoising model using test datasets by test_model_DeepMerip.py
 
-
-For additional performance analysis, you can evaluate the transformer-based model test_model_transformer.py:
-
 ## File Descriptions
 - `data_format_trans.py`: Script for transforming genomic position data for peak calling.
 - `data_prep.py`: Script for preparing and preprocessing MeRIP-Seq data into the required format for DeepMerip.
-- `Deep_merip.py`: Main script for running the convolutional neural network model.
-- `test_model_DeepMerip.py`: Script for testing the CNN-based DeepMerip model.
-- `test_model_transformer.py`: Script for testing a transformer-based model as an alternative to the CNN.
+- `Deep_merip.py`: Main script for running the hybridation of transformer encoder and convolutional neural network decoder model.
+- `ResNet.py`: Main script for running the convolutional neural network model.
 - `transformer.py`: Implementation of a transformer model for potential performance comparison.
+- `test_model_DeepMerip.py`: Script for testing the hybridation of transformer encoder and convolutional neural network decoder model.
+- `test_model_ResNet.py`: Script for testing the CNN-based DeepMerip model.
+- `test_model_transformer.py`: Script for testing a transformer-based model.
 
 
