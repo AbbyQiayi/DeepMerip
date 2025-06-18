@@ -1,5 +1,5 @@
 
-# DeepMerip: A Convolutional Deep Learning Approach for Denoising Exome-Wide MeRIP-Seq Data Due to Low Sequencing Depth
+# DeepMerip: a deep learning method for denoising MeRIP-Seq data with low sequencing depth
 
 ## Introduction
 **DeepMerip** is a computational tool designed to enhance exome-wide MeRIP-Seq data quality by addressing the challenges posed by low sequencing depth. The tool uses a deep-learning model to denoise input coverage data, improving the identification of m6A-modified sites and reducing biases associated with technical artifacts such as low read coverage.
